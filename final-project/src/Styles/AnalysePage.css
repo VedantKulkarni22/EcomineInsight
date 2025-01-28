@@ -1,0 +1,14 @@
+.btns{
+
+    background: #55E91F;
+    color: #0D1321;
+    font-size: 20px;
+}
+.btns:hover
+{
+    background-color: #4ac61d;
+}
+ul
+{
+    list-style-type: none;
+}

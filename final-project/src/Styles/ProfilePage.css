@@ -1,0 +1,207 @@
+/* ProfilePage.css */
+
+/* Container */
+.container-prof {
+    max-width: 900px;
+    margin: 0 auto;
+    /* padding: 20px; */
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  /* Profile Section */
+  .profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid black;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .info {
+    font-size: 23px;
+    color: #0D1321;
+  }
+  
+  .info p {
+    margin: 0;
+  }
+  
+  .edit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  /* Details Section */
+  .details {
+    margin: 20px 0;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input,
+  .input-group select {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Email Section */
+  .email-section {
+    padding: 20px 0;
+    border-top: 2px solid black;
+  }
+  
+  .email-section h4 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .email-section p {
+    font-size: 1rem;
+    color: black;
+  }
+  
+  .email-section .email {
+    font-weight: bold;
+    color: black;
+  }
+  
+  .email-section .time {
+    font-size: 0.9rem;
+    color: black;
+    margin-left: 10px;
+  }
+  
+  .add-email-btn {
+    margin-top: 10px;
+    /* background-color: #28a745; */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .welcome-message h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #55E91F;
+  }
+  
+  .welcome-message p {
+    font-size: 1.25rem;
+    color: #55E91F;
+  }
+  
+  /* Profile Image Upload Section */
+  .profile-image {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlayprof {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .profile-image:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Button Styling */
+  .opt1 {
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .opt1 {
+    background-color: #0D1321;
+    color: #55E91F;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .opt1:hover {
+    background-color: #55E91F;
+    color: #0D1321;
+  }
+    
+  
+  /* Media Query for Responsive Layout */
+  @media (max-width: 768px) {
+    .profile {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .profile-info {
+      margin-bottom: 20px;
+    }
+  
+    .welcome-message h1 {
+      font-size: 2rem;
+    }
+  
+    .welcome-message p {
+      font-size: 1rem;
+    }
+  }
+  

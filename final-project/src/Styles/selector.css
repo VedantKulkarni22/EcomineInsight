@@ -1,0 +1,35 @@
+.circle-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: lightgray;
+  }
+  
+  .circle-section {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .circle-section:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); }
+  .circle-section:nth-child(2) { top: 50%; left: 0; transform: translateY(-50%); }
+  .circle-section:nth-child(3) { top: 50%; right: 0; transform: translateY(-50%); }
+  .circle-section:nth-child(4) { bottom: 0; left: 50%; transform: translateX(-50%); }
+  
+  .selected {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  /* .bt
+  {
+    position: absolute;
+  } */
